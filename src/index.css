@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 4%;
+    --foreground: 180 100% 90%;
+
+    --card: 0 0% 6%;
+    --card-foreground: 180 100% 90%;
+
+    --popover: 0 0% 6%;
+    --popover-foreground: 180 100% 90%;
+
+    --primary: 180 100% 50%;
+    --primary-foreground: 0 0% 4%;
+
+    --secondary: 280 100% 60%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 180 20% 60%;
+
+    --accent: 180 100% 50%;
+    --accent-foreground: 0 0% 4%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 180 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Custom portfolio colors */
+    --cyber-cyan: 180 100% 50%;
+    --neon-purple: 280 100% 60%;
+    --deep-black: 0 0% 4%;
+    --darker-black: 0 0% 2%;
+    --glow-cyan: 180 100% 70%;
+    
+    /* Gradients */
+    --gradient-radial: radial-gradient(circle at center, hsl(180 100% 50% / 0.15), transparent 70%);
+    --gradient-cyber: linear-gradient(135deg, hsl(180 100% 50% / 0.2), hsl(280 100% 60% / 0.2));
+  }
+}
+
+@layer utilities {
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--cyber-cyan) / 0.5),
+                 0 0 40px hsl(var(--cyber-cyan) / 0.3);
+  }
+  
+  .box-glow {
+    box-shadow: 0 0 30px hsl(var(--cyber-cyan) / 0.3),
+                0 0 60px hsl(var(--cyber-cyan) / 0.1);
+  }
+  
+  .border-glow {
+    border-color: hsl(var(--cyber-cyan));
+    box-shadow: 0 0 10px hsl(var(--cyber-cyan) / 0.5),
+                inset 0 0 10px hsl(var(--cyber-cyan) / 0.2);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground overflow-x-hidden;
+    background-image: var(--gradient-radial);
+    background-attachment: fixed;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
