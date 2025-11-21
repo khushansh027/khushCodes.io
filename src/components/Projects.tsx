@@ -28,7 +28,7 @@ const majorProjects = [
         title: "Online Chatting Platform",
         description:
             "An online chatting platform with user previous-message access, typing tracking, interactive ui, and a scalable backend.",
-        github: "https://github.com/khushansh027/blogLogs-v1",
+        github: "https://github.com/khushansh027/chatterUp-v1",
         liveLink: "https://chatterup-ohnd.onrender.com/",
         tags: ["React", "Express", "Socket.io"],
         image:
