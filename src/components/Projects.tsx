@@ -25,6 +25,19 @@ const majorProjects = [
             "https://i.pinimg.com/736x/41/54/c7/4154c780b69fafa3e01f738d635c258c.jpg",
     },
     {
+        title: "Online Chatting Platform",
+        description:
+            "An online chatting platform with user previous-message access, typing tracking, interactive ui, and a scalable backend.",
+        github: "https://github.com/khushansh027/blogLogs-v1",
+        liveLink: "https://chatterup-ohnd.onrender.com/",
+        tags: ["React", "Express", "Socket.io"],
+        image:
+            "https://plus.unsplash.com/premium_photo-1721697080473-8281f165fbfb?w=800&h=600&fit=crop",
+    },
+];
+
+const minorProjects = [
+    {
         title: "Blogging Platform",
         description:
             "A dynamic blogging system with user authentication, role-based access, a rich text editor, and a scalable backend.",
@@ -34,9 +47,6 @@ const majorProjects = [
         image:
             "https://plus.unsplash.com/premium_photo-1720744786849-a7412d24ffbf?w=800&h=600&fit=crop",
     },
-];
-
-const minorProjects = [
     {
         title: "iPod Clone Web App",
         description:
