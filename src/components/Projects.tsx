@@ -4,6 +4,16 @@ import { useRef } from "react";
 import { ExternalLink, Github } from "lucide-react";
 
 const majorProjects = [
+        {
+        title: "E-Learning & LMS Platform",
+        description:
+            "A complete LMS with secure authentication, course creation tools, student dashboards, and cloud storage integration.",
+        github: "https://github.com/khushansh027/srcOpenCodeLabs",
+        liveLink: "https://src-opencodelabsv1.vercel.app/",
+        tags: ["React", "Firebase", "Supabase", "Multer"],
+        image:
+            "https://i.pinimg.com/736x/41/54/c7/4154c780b69fafa3e01f738d635c258c.jpg",
+    },
     {
         title: "E-Commerce Platform",
         description:
@@ -13,16 +23,6 @@ const majorProjects = [
         tags: ["React", "Firebase", "Axios", "Reselect"],
         image:
             "https://plus.unsplash.com/premium_photo-1683887064255-1c428d0b3934?w=800&h=600&fit=crop",
-    },
-    {
-        title: "E-Learning & LMS Platform",
-        description:
-            "A complete LMS with secure authentication, course creation tools, student dashboards, and cloud storage integration.",
-        github: "https://github.com/khushansh027/srcOpenCodeLabs",
-        liveLink: "https://src-opencodelabsv1.vercel.app/",
-        tags: ["React", "Firebase", "Supabase", "Multer"],
-        image:
-            "https://i.pinimg.com/736x/41/54/c7/4154c780b69fafa3e01f738d635c258c.jpg",
     },
     {
         title: "Online Chatting Platform",
